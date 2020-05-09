@@ -1,0 +1,129 @@
+body {
+    font-family: tahoma;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+
+p {
+  font-size: 10px;
+  color: red;
+}
+
+  .btn-sweet {
+    display: inline-block;
+    padding: 0.5em;
+    background: #c7c7c7;
+    border: 2px solid blue;
+    border-radius: 20px;
+    box-shadow: inset 0 0 1px 2px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    margin: 10px 10px 10px 10px;
+    font-family: cursive;
+  }
+  
+  .user-list {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .user-list .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .user-list .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .user-list:hover .picture::before {
+    height: 100%;
+  }
+  
+  .user-list .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .user-list .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  .user-list:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+  }
+  
+  .user-list .title {
+    display: block;
+    font-size: 10px;
+    color: #4e5052;
+  }
+  
+  .user-list .bar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .user-list:hover .bar {
+    bottom: 0;
+  }
+  
+  .user-list .bar li {
+    display: inline-block;
+  }
+  
+  .user-list .bar li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .user-list .bar li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+  }
+  
+  .input-sm {
+    height: 20px;
+  }
