@@ -30,6 +30,7 @@ p {
     text-align: center;
     overflow: hidden;
     position: relative;
+    height: 400px;
   }
   
   .user-list .picture {
